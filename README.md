@@ -4,7 +4,7 @@ Group Members: Michael Zacierka, Tom Lentz, Emily Flieg
 
 ## About
 
-> This Project completes the requiements for the final project
+> This Project completes the requirements for the final project
 
 - [x] Join announcement
 - [x] Leave announcement
@@ -13,7 +13,7 @@ Group Members: Michael Zacierka, Tom Lentz, Emily Flieg
 
 > Extra Functions
 
-- Online User List
+- [x] Online User List
 
 ### How to install
 
