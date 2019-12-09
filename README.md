@@ -1,2 +1,1 @@
-# ChatApp
-Final Project App
+# Data Communications Chat Final Project

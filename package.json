@@ -1,0 +1,17 @@
+{
+  "name": "UDPChatApp",
+  "version": "0.0.1",
+  "description": "DataCom Chat final project",
+  "dependencies": {
+    "express": "^4.17.1",
+    "package.json": "^2.0.1",
+    "socket.io": "^1.7.4"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "nodemon index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.1"
+  }
+}

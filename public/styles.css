@@ -1,0 +1,107 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+form {
+    margin-top: 2px;
+    background: #000;
+    padding: 3px;
+    position: fixed;
+    bottom: 0;
+    border-radius: 5px;
+    margin-bottom: 1px;
+    width: 87%;
+}
+
+form input {
+    border: 0;
+    padding: 10px;
+    width: 90%;
+    margin-right: .5%;
+}
+
+form button {
+    width: 9%;
+    border: none;
+}
+
+#messages {
+    background: #eeeeee;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+
+#messages li {
+    padding: 5px 10px;
+    overflow: auto;
+}
+
+#messages li:nth-child(odd) {
+    background: rgb(182, 182, 182);
+}
+
+
+
+.sidenav {
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(115, 134, 213);
+    overflow-x: hidden;
+    padding-top: 20px;
+    color: seashell;
+}
+
+.sidenav header {
+    padding-left: 5px;
+    height: 500px;
+    background-color: rgb(109, 127, 204);
+}
+
+.sidenav h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    font-weight: 300;
+    line-height: 1.7em;
+    text-align: center;
+    text-decoration: underline;
+    padding: 0px;
+}
+
+.sidenav p {
+    color: rgb(207, 155, 75);
+    font-size: 20px;
+
+    padding: 2px 0px 0px 15px;
+}
+
+.usersList {
+    list-style: none;
+}
+
+.usersList li {
+    padding: 2px 5px;
+}
+
+.main {
+    margin-left: 200px;
+    /* Same as the width of the sidenav */
+    font-size: 28px;
+    /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+@media only screen and (max-width: 450px) {
+    .sidenav {
+        display: none;
+    }
+}
