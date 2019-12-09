@@ -2,7 +2,7 @@ $(function () {
   // Enter a name to be used for the project
   var name = prompt('Enter a Username (Optional):');
   if (name.length == '') {
-    name = `Chatter_${Math.random(4).toString(6).replace('0.', '')}`; // Chatter_<random>
+    name = `Chatter_${Math.floor(1 + Math.random()*(max + 1 - 1))}`; // Chatter_<random>
   }
 
 

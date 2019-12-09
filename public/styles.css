@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    padding-bottom: 80px;
 }
 
 form {
@@ -37,6 +38,7 @@ form button {
 }
 
 #messages li {
+    font-size: 16px;
     padding: 5px 10px;
     overflow: auto;
 }
@@ -75,6 +77,13 @@ form button {
     text-align: center;
     text-decoration: underline;
     padding: 0px;
+}
+.sidenav a {
+    color: inherit;
+}
+
+.sidenav a:hover {
+    color: peru;
 }
 
 .sidenav p {

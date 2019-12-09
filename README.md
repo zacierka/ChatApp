@@ -4,6 +4,8 @@ Group Members: Michael Zacierka, Tom Lentz, Emily Flieg
 
 ## About
 
+[Heroku](https://chat-app-mz.herokuapp.com/) Deployment
+
 > This Project completes the requirements for the final project
 
 - [x] Join announcement
