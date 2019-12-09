@@ -3,24 +3,31 @@
 
 <head>
   <title>ChatApp</title>
+  <!-- Local CSS -->
   <link rel="stylesheet" type="text/css" href="./styles.css">
+  <!-- Local BootStrap -->
   <link rel="stylesheet" href="./bootstrap.min.css">
+  <!-- Jquery CDN -->
   <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
-  <script src="./bootstrap.min.js"></script>
-  </script>
-  <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-  </script>
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <!-- Must be declared after Jquery -->
+  <script src="./bootstrap.min.js"></script>
+  <!-- Socket IO CDN -->
+  <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+  <!-- Bootstrap popper -->
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
   </script>
+  <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/d71e611b34.js" crossorigin="anonymous"></script>
 
   <script type="text/javascript" src="./socket.js"></script>
 </head>
 
+<!-- Body Attribute -->
 <body>
+  <!-- Begin SideNav -->
   <div class="sidenav">
     <div class="header">
         <h3>Chat App</h2>
@@ -29,7 +36,9 @@
     <ul id="userList" class="usersList">
     </ul>
   </div>
+  <!-- End SideNav -->
 
+  <!-- Begin Main container -->
   <div class="main">
     <div class="msgs">
       <ul id="messages"></ul>
@@ -38,6 +47,7 @@
       <input id="m" autofocus autocomplete="off" /><button class="btn btn-primary">Send</button>
     </form>
   </div>
+  <!-- End Main container -->
 </body>
 
 </html>

@@ -1,22 +1,26 @@
-$(function () {
+$(function () { 
+  // Enter a name to be used for the project
   var name = prompt('Enter a Username (Optional):');
   if (name.length == '') {
-    name = `Chatter_${Math.random(4).toString(6).replace('0.', '')}`; //User<random>
+    name = `Chatter_${Math.random(4).toString(6).replace('0.', '')}`; // Chatter_<random>
   }
 
 
-  var socket = io();
+  var socket = io(); // Socket IO inst.
 
   
-  socket.on('connect', () => {
+  socket.on('connect', () => { // Connection Established
     $('#messages').append($('<li>').text('You\'ve entered chat'));
-    window.scrollTo(0, document.body.scrollHeight);
+    window.scrollTo(0, document.body.scrollHeight); // Scroll window along with the bottom list item
     socket.emit('join', name);
     $('#messages').append($('<li>').text("Welcome to the Chatroom! Use the box below to chat."));
     $('#userList').append($('<li>').text(`${name}`));
   });
 
-  $('form').submit(function () {
+  $('form').submit(function ( event ) {
+    event.preventDefault;
+    console.log($('#m').val() == new RegExp('\\s+'));
+    if(/^ *$/.test($('#m').val())) return false;
     socket.emit('chat message', {
       name: name,
       msg: $('#m').val().substring(0, 279)
@@ -46,6 +50,7 @@ $(function () {
       if(list[i].outerText === user) {
         //remove item document.querySelectorAll('#userList li')[0].hidden = true
         list[i].hidden = true;
+        return;
       }
     }
   });

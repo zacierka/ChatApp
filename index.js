@@ -21,6 +21,9 @@ app.get('/', function (req, res) {
   res.sendFile(__dirname + '/index.html');
 });
 
+/*
+  Connection has been established with a client
+*/
 io.on('connection', function (socket) {
   console.log("Connection established | " + new Date());
   socket.emit('updateSideMenu', allClients.map(m => m.username));
@@ -28,12 +31,17 @@ io.on('connection', function (socket) {
     io.emit('chat message', msg_obj);
   });
 
+  /*
+    Join event from client to server request, resend via that socket
+  */
   socket.on('join', function(user) {
     socket.username = user;
     allClients.push(socket);
     socket.broadcast.emit('join', { msg:`${user} has joined the chat.`, username: user} );
   });
-
+  /*
+    Disconnect event from client, use server to tell all clients a user left
+  */
   socket.on('disconnect', function () {
     var i = allClients.indexOf(socket);
     var user = allClients.splice(i, 1)[0];
@@ -42,7 +50,9 @@ io.on('connection', function (socket) {
   });
 });
 
-
+/*
+  Run the server via ports 4444
+*/
 http.listen(port, function () {
   console.log('listening on *:' + port);
 });
