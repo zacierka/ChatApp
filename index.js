@@ -1,13 +1,13 @@
 /*
  * Chat Application: Data Communications Dr. Wang, 12:30 MW
  * Date :12/6/19
- * Group: Michael Zacierka, Tom Lentz, Emily Flieg
+ * Group: Michael Zacierka, Tom Lentz
  * Description: 
- * -----------------------------------------------------------------
- * |                                                               |
- * |  Simple Chat Application using sockets over a TCP connection  |
- * |                                                               |
- * -----------------------------------------------------------------
+ * ----------------------------------------------------------------------
+ * |                                                                    |
+ * |  Simple Chat Application using sockets over a Socketed connection  |
+ * |                                                                    |
+ * ----------------------------------------------------------------------
  */
 var express = require('express')
 var app = express();

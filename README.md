@@ -1,6 +1,6 @@
-# Data Communications Chat Final Project
+# Data Communications UDP Chat Final Project - Rowan University 2019
 
-Group Members: Michael Zacierka, Tom Lentz, Emily Flieg
+Group Members: Michael Zacierka, Tom Lentz
 
 ## About
 
@@ -16,6 +16,16 @@ Group Members: Michael Zacierka, Tom Lentz, Emily Flieg
 > Extra Functions
 
 - [x] Online User List
+- [x] Emoji Support (For Windows: Hold Windows key + Period key)
+
+> Possible Future Implementations after demo
+
+- [x] Chat rooms
+- [x] Stateful chat history
+- [x] Giphy link support
+- [x] image uploads
+- [x] Accounts
+- [x] Private Messages
 
 ### How to install
 
@@ -26,6 +36,8 @@ Group Members: Michael Zacierka, Tom Lentz, Emily Flieg
  3. npm i
 
  4. npm start
+
+ 5. Navigate to browser site localhost:4444
 
 #### License @2019
 
