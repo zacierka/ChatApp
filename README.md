@@ -20,12 +20,12 @@ Group Members: Michael Zacierka, Tom Lentz
 
 > Possible Future Implementations after demo
 
-- [x] Chat rooms
-- [x] Stateful chat history
-- [x] Giphy link support
-- [x] image uploads
-- [x] Accounts
-- [x] Private Messages
+- [ ] Chat rooms
+- [ ] Stateful chat history
+- [ ] Giphy link support
+- [ ] image uploads
+- [ ] Accounts
+- [ ] Private Messages
 
 ### How to install
 
