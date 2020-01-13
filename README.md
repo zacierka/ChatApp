@@ -3,8 +3,7 @@
 Group Members: Michael Zacierka, Tom Lentz
 
 ## About
-
-[Heroku](https://chat-app-mz.herokuapp.com/) Deployment
+[View App](https://chat-app-mz.herokuapp.com/)
 
 > This Project completes the requirements for the final project
 
