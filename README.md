@@ -3,7 +3,7 @@
 Group Members: Michael Zacierka, Tom Lentz
 
 ## About
-[View App](https://chat-app-mz.herokuapp.com/)
+// Not Functional 2023 [View App] (https://chat-app-mz.herokuapp.com/)
 
 > This Project completes the requirements for the final project
 
